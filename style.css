@@ -1,9 +1,24 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 body {
-    text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  width: 670px;
+  height: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400px;
+  font-size: 14px;
+  background-color: #f5f5f5;
 }
 
 /*
@@ -21,3 +36,115 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+
+.zbozi {
+  display: flex;
+  box-shadow: 5px 7px 10px rgb(150, 148, 148);
+  border-radius: 3%;
+}
+
+.slogan {
+  font-weight: 500;
+  font-size: 16px;
+  padding-top: 30px;
+}
+
+.cena {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.zaruka {
+  font-size: 12px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.produkt {
+  color: #959595;
+}
+
+.parametr {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.velikosti {
+  list-style-type: none;
+  padding: 0;
+}
+
+.velikosti li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.vizual {
+  background-image: linear-gradient(to bottom, #06d7c1, #50cc49);
+  border-radius: 3% 0 0 3%;
+  color: white;
+  padding: 30px;
+  width: 50%;
+  height: 440px;
+}
+
+.detaily {
+  background-color: white;
+  border-radius: 0 3% 3% 0;
+  padding: 30px;
+  width: 50%;
+  height: 440px;
+}
+
+.bota {
+  position: relative;
+  left: -110px;
+  top: -10px;
+}
+
+.cenovka {
+  position: relative;
+  bottom: 90px;
+  text-align: right;
+}
+
+.tlacitko {
+  background-color: #f15f42;
+  padding: 12px 25px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 10%; /* proč ty rohy nejsou zakulacené rovnoměrně? */
+  font-size: 12px;
+  position: relative;
+  bottom: -60px;
+}
+
+.akce a:hover {
+  box-shadow: 3px 3px 5px rgb(150, 148, 148);
+}
+
+.vybrana {
+  color: #f15f42;
+  border: 1px solid #f15f42;
+  border-radius: 50%;
+  font-weight: 500;
+}
+
+.velikosti .vybrana {
+  padding: 3px;
+  margin-right: 17px;
+}
+
+.popis {
+  border-bottom: 1.5px solid #06d7c1;
+  padding-bottom: 30px;
+}
+
+.parametr {
+  padding-top: 30px;
+}
